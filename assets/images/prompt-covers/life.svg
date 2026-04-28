@@ -1,0 +1,30 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#201114"/>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="360" cy="280" r="210" fill="url(#glowA)"/>
+  <circle cx="1180" cy="820" r="280" fill="url(#glowB)"/>
+  <path d="M800 760C530 560 420 430 420 310C420 198 508 120 620 120C692 120 760 154 800 212C840 154 908 120 980 120C1092 120 1180 198 1180 310C1180 430 1070 560 800 760Z" fill="url(#heart)" fill-opacity="0.9"/>
+  <path d="M320 900C480 800 640 760 800 780C980 802 1130 882 1260 1040" stroke="white" stroke-opacity="0.35" stroke-width="4"/>
+  <text x="120" y="950" fill="white" font-size="120" font-family="Arial, sans-serif" font-weight="700">LIFE</text>
+  <text x="125" y="1035" fill="white" fill-opacity="0.72" font-size="44" font-family="Arial, sans-serif">Image2 Prompt Preview</text>
+  <defs>
+    <linearGradient id="bg" x1="1500" y1="60" x2="70" y2="1140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EF4444"/>
+      <stop offset="0.5" stop-color="#7F1D1D"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 280) rotate(90) scale(210)">
+      <stop stop-color="#FDA4AF"/>
+      <stop offset="1" stop-color="#FDA4AF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 820) rotate(90) scale(280)">
+      <stop stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#FB7185" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heart" x1="480" y1="160" x2="1130" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FECDD3"/>
+      <stop offset="0.5" stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#F43F5E"/>
+    </linearGradient>
+  </defs>
+</svg>

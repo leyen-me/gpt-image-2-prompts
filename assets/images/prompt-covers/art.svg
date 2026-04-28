@@ -1,0 +1,34 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#140C1C"/>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="1120" cy="300" r="290" fill="url(#glowA)"/>
+  <circle cx="420" cy="860" r="220" fill="url(#glowB)"/>
+  <path d="M260 780C520 500 760 390 980 420C1140 440 1270 520 1360 670V1200H260V780Z" fill="url(#canvas)" fill-opacity="0.86"/>
+  <path d="M520 530C590 470 680 450 770 460C910 476 1010 570 1060 690" stroke="white" stroke-opacity="0.55" stroke-width="6" stroke-linecap="round"/>
+  <path d="M490 620C590 720 720 790 860 800C950 806 1030 785 1100 740" stroke="white" stroke-opacity="0.45" stroke-width="6" stroke-linecap="round"/>
+  <rect x="1120" y="520" width="180" height="180" rx="28" fill="white" fill-opacity="0.14"/>
+  <rect x="1160" y="560" width="100" height="20" rx="10" fill="white" fill-opacity="0.35"/>
+  <rect x="1160" y="610" width="80" height="20" rx="10" fill="white" fill-opacity="0.25"/>
+  <text x="120" y="950" fill="white" font-size="120" font-family="Arial, sans-serif" font-weight="700">ART</text>
+  <text x="125" y="1035" fill="white" fill-opacity="0.72" font-size="44" font-family="Arial, sans-serif">Image2 Prompt Preview</text>
+  <defs>
+    <linearGradient id="bg" x1="1570" y1="40" x2="120" y2="1150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DB2777"/>
+      <stop offset="0.45" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1120 300) rotate(90) scale(290)">
+      <stop stop-color="#FBCFE8"/>
+      <stop offset="1" stop-color="#FBCFE8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(420 860) rotate(90) scale(220)">
+      <stop stop-color="#F9A8D4"/>
+      <stop offset="1" stop-color="#F9A8D4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="canvas" x1="260" y1="500" x2="1360" y2="1060" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A"/>
+      <stop offset="0.5" stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+  </defs>
+</svg>

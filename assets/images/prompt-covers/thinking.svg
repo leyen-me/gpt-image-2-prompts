@@ -1,0 +1,33 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#0F172A"/>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="360" cy="260" r="220" fill="url(#glowA)" fill-opacity="0.9"/>
+  <circle cx="1260" cy="860" r="300" fill="url(#glowB)" fill-opacity="0.8"/>
+  <path d="M300 900C430 700 620 620 820 640C1020 660 1200 780 1310 1020" stroke="white" stroke-opacity="0.4" stroke-width="3"/>
+  <path d="M240 350C460 440 650 430 820 310C990 190 1130 170 1340 280" stroke="white" stroke-opacity="0.28" stroke-width="3"/>
+  <g opacity="0.4">
+    <circle cx="540" cy="360" r="10" fill="white"/>
+    <circle cx="640" cy="420" r="8" fill="white"/>
+    <circle cx="760" cy="390" r="12" fill="white"/>
+    <circle cx="890" cy="470" r="9" fill="white"/>
+    <circle cx="1020" cy="420" r="8" fill="white"/>
+    <path d="M540 360L640 420L760 390L890 470L1020 420" stroke="white" stroke-opacity="0.6" stroke-width="3"/>
+  </g>
+  <text x="120" y="950" fill="white" font-size="120" font-family="Arial, sans-serif" font-weight="700">THINKING</text>
+  <text x="125" y="1035" fill="white" fill-opacity="0.72" font-size="44" font-family="Arial, sans-serif">Image2 Prompt Preview</text>
+  <defs>
+    <linearGradient id="bg" x1="1600" y1="0" x2="0" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#312E81"/>
+      <stop offset="0.55" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 260) rotate(90) scale(220)">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1260 860) rotate(90) scale(300)">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -270,8 +270,20 @@ class PromptsPage {
     // 获取分类信息
     const category = this.categories.find(c => c.id === prompt.category);
     const categoryColor = category?.color || 'var(--color-primary)';
+    const promptImage = this.getPromptImage(prompt);
+    const imageAlt = prompt.previewImage?.alt || `${prompt.title} 示例图`;
 
     card.innerHTML = `
+      <div class="prompt-card-image-wrapper">
+        <img
+          class="prompt-card-image"
+          src="${this.escapeHtml(promptImage)}"
+          alt="${this.escapeHtml(imageAlt)}"
+          loading="lazy"
+        >
+        <div class="prompt-card-image-badge">Image2 示例</div>
+      </div>
+
       <div class="prompt-card-header">
         <div class="prompt-card-meta">
           <span class="badge badge-category" style="--category-color: ${categoryColor}">
@@ -333,6 +345,8 @@ class PromptsPage {
    */
   openPromptModal(prompt) {
     const category = this.categories.find(c => c.id === prompt.category);
+    const promptImage = this.getPromptImage(prompt);
+    const imageAlt = prompt.previewImage?.alt || `${prompt.title} 示例图`;
     
     const modalHTML = `
       <div class="modal-overlay modal-enter" id="prompt-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -343,6 +357,14 @@ class PromptsPage {
           </div>
           
           <div class="modal-content">
+            <div class="modal-preview">
+              <img
+                class="modal-preview-image"
+                src="${this.escapeHtml(promptImage)}"
+                alt="${this.escapeHtml(imageAlt)}"
+              >
+            </div>
+
             <!-- 元信息 -->
             <div class="modal-meta-grid">
               ${prompt.author ? `
@@ -415,6 +437,26 @@ class PromptsPage {
 
     // 事件监听
     this.setupModalEvents(prompt);
+  }
+
+  /**
+   * 获取 Prompt 展示图
+   */
+  getPromptImage(prompt) {
+    if (prompt.previewImage?.src) {
+      return prompt.previewImage.src;
+    }
+
+    const categoryFallbackMap = {
+      thinking: './assets/images/prompt-covers/thinking.svg',
+      creative: './assets/images/prompt-covers/creative.svg',
+      art: './assets/images/prompt-covers/art.svg',
+      tech: './assets/images/prompt-covers/tech.svg',
+      life: './assets/images/prompt-covers/life.svg',
+      meta: './assets/images/prompt-covers/meta.svg'
+    };
+
+    return categoryFallbackMap[prompt.category] || './assets/images/prompt-covers/default.svg';
   }
 
   /**

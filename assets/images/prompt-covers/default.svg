@@ -1,0 +1,25 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#111827"/>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="440" cy="300" r="220" fill="url(#glowA)"/>
+  <circle cx="1180" cy="820" r="260" fill="url(#glowB)"/>
+  <rect x="250" y="220" width="1100" height="720" rx="48" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+  <path d="M390 760L620 520L800 670L1000 420L1210 760" stroke="white" stroke-opacity="0.3" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="950" fill="white" font-size="120" font-family="Arial, sans-serif" font-weight="700">PROMPT</text>
+  <text x="125" y="1035" fill="white" fill-opacity="0.72" font-size="44" font-family="Arial, sans-serif">Image2 Prompt Preview</text>
+  <defs>
+    <linearGradient id="bg" x1="1500" y1="60" x2="90" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="0.5" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(440 300) rotate(90) scale(220)">
+      <stop stop-color="#C4B5FD"/>
+      <stop offset="1" stop-color="#C4B5FD" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 820) rotate(90) scale(260)">
+      <stop stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#93C5FD" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -366,6 +366,41 @@
   opacity: 1;
 }
 
+.prompt-card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+}
+
+.prompt-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s var(--ease-smooth);
+}
+
+.prompt-card:hover .prompt-card-image {
+  transform: scale(1.04);
+}
+
+.prompt-card-image-badge {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111111;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
 .prompt-card-header {
   display: flex;
   align-items: center;
@@ -555,6 +590,20 @@
   padding: var(--spacing-xl);
 }
 
+.modal-preview {
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  overflow: hidden;
+}
+
+.modal-preview-image {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .modal-footer {
   padding: var(--spacing-xl);
   border-top: 1px solid var(--color-border);
@@ -715,5 +764,10 @@
   
   .prompt-card {
     padding: var(--spacing-md);
+  }
+
+  .prompt-card-image-badge {
+    top: var(--spacing-xs);
+    right: var(--spacing-xs);
   }
 }

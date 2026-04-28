@@ -63,7 +63,7 @@ prompt/
 ├── index.html              # 首页
 ├── prompts.html            # Prompt 列表页
 ├── data/
-│   └── prompts.json        # Prompt 数据文件
+│   └── prompts.js          # Prompt 数据文件
 ├── assets/
 │   ├── styles/
 │   │   ├── global.css      # 全局样式和 CSS 变量
@@ -74,7 +74,7 @@ prompt/
 │   │   ├── home.js         # 首页逻辑
 │   │   └── prompts.js      # 列表页逻辑
 │   └── images/
-│       └── decorations/    # 装饰图形
+│       └── prompt-covers/  # Prompt 示例封面图
 ├── ui.md                   # UI 设计指南
 └── README.md               # 项目文档
 ```
@@ -132,7 +132,7 @@ prompt/
 
 ### 数据格式
 
-编辑 `data/prompts.json`，按以下格式添加新的 Prompt：
+编辑 `data/prompts.js`，按以下格式添加新的 Prompt：
 
 ```json
 {
@@ -146,7 +146,11 @@ prompt/
   "createdAt": "2025-10-22T10:00:00Z",
   "author": "作者名称",
   "version": "1.0.0",
-  "language": "zh-CN"
+  "language": "zh-CN",
+  "previewImage": {
+    "src": "./assets/images/your-preview-image.webp",
+    "alt": "这条 Prompt 的示例图说明"
+  }
 }
 ```
 
@@ -168,6 +172,7 @@ prompt/
 | `language` | String | - | 语言（zh-CN/en-US） |
 | `usageCount` | Number | - | 使用次数 |
 | `rating` | Number | - | 评分（1-5） |
+| `previewImage` | Object | - | 示例图片配置，包含 `src` 与 `alt` |
 
 ## 🛠️ 技术栈
 
@@ -192,7 +197,7 @@ prompt/
 
 1. Fork 本仓库
 2. 创建特性分支 (`git checkout -b feature/new-prompt`)
-3. 在 `data/prompts.json` 中添加新的 Prompt
+3. 在 `data/prompts.js` 中添加新的 Prompt
 4. 提交更改 (`git commit -m 'Add: 新增 XXX Prompt'`)
 5. 推送到分支 (`git push origin feature/new-prompt`)
 6. 创建 Pull Request
