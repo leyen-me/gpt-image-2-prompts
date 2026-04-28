@@ -1,5 +1,5 @@
 // ============================================
-// Prompts 列表页逻辑
+// Image2 提示词列表页逻辑
 // ============================================
 
 import { promptsData } from '../../data/prompts.js';
@@ -134,7 +134,7 @@ class PromptsPage {
   }
 
   /**
-   * 搜索和筛选 Prompts
+   * 搜索和筛选 Image2 提示词
    */
   filterAndRenderPrompts() {
     let results = [...this.allPrompts];
@@ -197,7 +197,7 @@ class PromptsPage {
   }
 
   /**
-   * 排序 Prompts
+   * 排序 Image2 提示词
    */
   sortPrompts(prompts, sortBy) {
     const sorted = [...prompts];
@@ -229,7 +229,7 @@ class PromptsPage {
   }
 
   /**
-   * 渲染 Prompts 列表
+   * 渲染 Image2 提示词列表
    */
   renderPrompts(prompts) {
     const grid = document.getElementById('prompts-grid');
@@ -333,9 +333,9 @@ class PromptsPage {
     if (info) {
       const total = this.allPrompts.length;
       if (count === total) {
-        info.textContent = `共 ${total} 个 Prompts`;
+        info.textContent = `共 ${total} 条 Image2 Prompt`;
       } else {
-        info.textContent = `找到 ${count} 个 Prompts（共 ${total} 个）`;
+        info.textContent = `找到 ${count} 条 Image2 Prompt（共 ${total} 条）`;
       }
     }
   }
@@ -419,7 +419,7 @@ class PromptsPage {
           
           <div class="modal-footer">
             <button class="btn btn-primary" id="copy-prompt-btn">
-              📋 复制 Prompt
+              📋 复制提示词
             </button>
             <button class="btn btn-secondary" id="share-prompt-btn">
               🔗 分享
@@ -493,9 +493,9 @@ class PromptsPage {
       if (success) {
         copyBtn.textContent = '✓ 已复制';
         copyBtn.classList.add('copy-success');
-        Utils.showToast('Prompt 已复制到剪贴板', 'success');
+        Utils.showToast('提示词已复制到剪贴板', 'success');
         setTimeout(() => {
-          copyBtn.textContent = '📋 复制 Prompt';
+          copyBtn.textContent = '📋 复制提示词';
           copyBtn.classList.remove('copy-success');
         }, 2000);
       } else {

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="浏览所有 AI Prompt，通过搜索和筛选快速找到您需要的提示词">
-  <meta name="keywords" content="AI Prompt, 提示词库, ChatGPT Prompts, AI 对话">
+  <meta name="description" content="浏览所有 Image2 图像提示词，通过搜索、分类与排序快速筛选适合人像、产品和场景出图的 Prompt。">
+  <meta name="keywords" content="Image2, 图像提示词, AI 图片生成, 人像 Prompt, 产品 Prompt">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="AI Prompts - 浏览所有提示词">
-  <meta property="og:description" content="搜索、筛选和浏览高质量的 AI Prompts">
+  <meta property="og:title" content="Image2 Prompts - 浏览图像提示词">
+  <meta property="og:description" content="搜索、筛选和浏览高质量的 Image2 图像提示词。">
   <meta property="og:type" content="website">
   
-  <title>AI Prompts - 浏览所有提示词</title>
+  <title>Image2 Prompts - 浏览图像提示词</title>
   
   <!-- 样式表 -->
   <link rel="stylesheet" href="./assets/styles/global.css">
@@ -213,7 +213,7 @@
     <div class="header-content">
       <a href="./index.html" class="logo">
         <span class="logo-icon">✨</span>
-        <span>AI Prompt 合集</span>
+        <span>Image2 Prompt Gallery</span>
       </a>
       
       <nav class="nav" role="navigation">
@@ -244,8 +244,8 @@
                 type="text" 
                 id="search-input"
                 class="search-input" 
-                placeholder="搜索 Prompts（标题、描述、标签）..."
-                aria-label="搜索 Prompts"
+                placeholder="搜索 Image2 Prompt（标题、描述、标签）..."
+                aria-label="搜索 Image2 Prompt"
               >
               <kbd class="search-shortcut">⌘K</kbd>
             </div>
@@ -253,8 +253,8 @@
             <select id="sort-select" class="sort-select" aria-label="排序方式">
               <option value="latest">最新创建</option>
               <option value="updated">最近更新</option>
-              <option value="popular">最受欢迎</option>
-              <option value="alphabetical">字母顺序</option>
+              <option value="popular">最高使用</option>
+              <option value="alphabetical">标题排序</option>
             </select>
           </div>
           
@@ -287,9 +287,9 @@
       <!-- 空状态 -->
       <div class="empty-state" id="empty-state" style="display: none;">
         <div class="empty-state-icon">🔍</div>
-        <h3 class="empty-state-title">未找到匹配的 Prompts</h3>
+        <h3 class="empty-state-title">暂无匹配的 Image2 Prompt</h3>
         <p class="empty-state-description">
-          尝试调整搜索关键词或筛选条件
+          你可以调整搜索条件，或者先按模板添加第一条图像提示词
         </p>
         <button class="btn btn-primary" onclick="resetFilters()">
           重置筛选
@@ -306,7 +306,7 @@
     <div class="container">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-md);">
         <div style="color: var(--color-text-secondary);">
-          © 2025 AI Prompt 合集. 基于开源精神构建.
+          © 2026 Image2 Prompt Gallery. 专注图像生成提示词整理。
         </div>
         <div style="display: flex; gap: var(--spacing-lg);">
           <a href="https://github.com/leyen-me/prompt" class="nav-link" target="_blank" rel="noopener">GitHub</a>
