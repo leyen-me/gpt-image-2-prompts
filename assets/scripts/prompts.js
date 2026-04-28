@@ -281,7 +281,6 @@ class PromptsPage {
           alt="${this.escapeHtml(imageAlt)}"
           loading="lazy"
         >
-        <div class="prompt-card-image-badge">Image2 示例</div>
       </div>
 
       <div class="prompt-card-header">
