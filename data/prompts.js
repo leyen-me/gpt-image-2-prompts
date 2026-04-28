@@ -9,7 +9,7 @@
 
 export const promptsData = {
   version: "2.0.0",
-  lastUpdated: "2026-04-28T07:12:00Z",
+  lastUpdated: "2026-04-28T07:16:00Z",
 
   categories: [
     {
@@ -17,6 +17,12 @@ export const promptsData = {
       name: "书法艺术",
       icon: "🖌️",
       color: "#7C2D12",
+    },
+    {
+      id: "fashion",
+      name: "时尚广告",
+      icon: "🕶️",
+      color: "#2563EB",
     },
     // 分类模板
     // {
@@ -60,6 +66,28 @@ export const promptsData = {
       previewImage: {
         src: "./assets/images/examples/traditional-chinese-calligraphy-poem.png",
         alt: "中国传统古诗书法作品示例图",
+      },
+    },
+    {
+      id: "avant-garde-fashion-vision-eyewear",
+      title: "先锋时尚眼镜广告 VISION",
+      description:
+        "适合生成带有雕塑化眼镜道具、大字排版和杂志视觉气质的高端时尚广告图。",
+      content:
+        "Avant-garde fashion advertisement, oversized futuristic sunglasses positioned like sculpture, model casually seated on the frame as if furniture, giant word \"VISION\" behind in bold white typography, powder blue studio background, reflective floor, luxury eyewear campaign aesthetic, ultra-clean layout, editorial magazine styling, 1:1",
+      category: "fashion",
+      tags: ["时尚广告", "眼镜", "先锋视觉", "杂志风", "极简构图", "方图"],
+      difficulty: "中级",
+      createdAt: "2026-04-28T07:16:00Z",
+      updatedAt: "2026-04-28T07:16:00Z",
+      author: "用户提供",
+      version: "1.0.0",
+      language: "en-US",
+      usageCount: 0,
+      rating: 5,
+      previewImage: {
+        src: "./assets/images/examples/avant-garde-fashion-vision-eyewear.png",
+        alt: "先锋时尚眼镜广告示例图",
       },
     },
 
